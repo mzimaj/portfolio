@@ -1,6 +1,4 @@
-/* =========================================================
-   Global
-========================================================= */
+/* Global */
 
 *,
 *::before,
@@ -108,10 +106,7 @@ main {
   line-height: 1.15;
 }
 
-
-/* =========================================================
-   Navbar
-========================================================= */
+/* Navbar */
 
 .navbar {
   position: sticky;
@@ -177,10 +172,7 @@ main {
   transform: scaleX(1);
 }
 
-
-/* =========================================================
-   Buttons
-========================================================= */
+/* Buttons */
 
 .button {
   display: inline-flex;
@@ -226,10 +218,7 @@ main {
   background-color: rgba(96, 165, 250, 0.06);
 }
 
-
-/* =========================================================
-   Hero
-========================================================= */
+/* Hero */
 
 .hero {
   position: relative;
@@ -240,15 +229,20 @@ main {
   overflow: hidden;
 }
 
-.hero::after {
+.hero::after,
+.about-preview::after,
+.featured-project-preview::after {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 110px;
   height: 1px;
   background-color: var(--border);
   content: "";
   transform: translateX(-50%);
+}
+
+.hero::after {
+  width: 110px;
 }
 
 .hero-content {
@@ -294,9 +288,16 @@ main {
   line-height: 1.8;
 }
 
-.hero-buttons {
+.hero-buttons,
+.social-links,
+.tech-stack-list,
+.featured-project-tech,
+.project-tech {
   display: flex;
   flex-wrap: wrap;
+}
+
+.hero-buttons {
   gap: 1rem;
 }
 
@@ -340,14 +341,9 @@ main {
   border-radius: 50%;
 }
 
-
-/* =========================================================
-   Social links
-========================================================= */
+/* Social links */
 
 .social-links {
-  display: flex;
-  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 1.6rem;
 }
@@ -374,10 +370,7 @@ main {
   transform: translateY(-2px);
 }
 
-
-/* =========================================================
-   Tech stack
-========================================================= */
+/* Tech stack */
 
 .tech-stack {
   margin-top: 1.9rem;
@@ -393,9 +386,13 @@ main {
 }
 
 .tech-stack-list {
-  display: flex;
-  flex-wrap: wrap;
   gap: 0.45rem;
+}
+
+.tech-badge,
+.project-status,
+.project-tech li {
+  border-radius: 999px;
 }
 
 .tech-badge {
@@ -406,7 +403,6 @@ main {
   color: var(--text-secondary);
   background-color: rgba(31, 41, 55, 0.72);
   border: 1px solid var(--border);
-  border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 600;
   transition:
@@ -428,10 +424,7 @@ main {
   transform: translateY(-2px);
 }
 
-
-/* =========================================================
-   Home sections
-========================================================= */
+/* Home sections */
 
 .home-section {
   position: relative;
@@ -461,19 +454,10 @@ main {
 
 .about-preview::after,
 .featured-project-preview::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
   width: 70px;
-  height: 1px;
-  background-color: var(--border);
-  content: "";
-  transform: translateX(-50%);
 }
 
 .featured-project-tech {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 0.8rem;
   margin: 2rem 0;
@@ -501,9 +485,7 @@ main {
   color: var(--accent);
 }
 
-/* =========================================================
-   About page
-========================================================= */
+/* About page */
 
 .about-content {
   display: grid;
@@ -512,10 +494,15 @@ main {
   gap: clamp(2rem, 5vw, 4rem);
 }
 
-.about-card {
-  padding: 2rem;
+.about-card,
+.project-card,
+.contact-card {
   background-color: var(--surface);
   border: 1px solid var(--border);
+}
+
+.about-card {
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
 }
@@ -558,16 +545,11 @@ main {
   margin-bottom: 0;
 }
 
-
-/* =========================================================
-   Projects page
-========================================================= */
+/* Projects page */
 
 .project-card {
   max-width: 850px;
   padding: clamp(1.5rem, 4vw, 2.5rem);
-  background-color: var(--surface);
-  border: 1px solid var(--border);
   border-radius: 18px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
   transition:
@@ -599,7 +581,6 @@ main {
   color: #fbbf24;
   background-color: rgba(251, 191, 36, 0.08);
   border: 1px solid rgba(251, 191, 36, 0.3);
-  border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 700;
 }
@@ -618,8 +599,6 @@ main {
 }
 
 .project-tech {
-  display: flex;
-  flex-wrap: wrap;
   gap: 0.7rem;
 }
 
@@ -628,7 +607,6 @@ main {
   color: var(--accent);
   background-color: rgba(96, 165, 250, 0.1);
   border: 1px solid rgba(96, 165, 250, 0.14);
-  border-radius: 999px;
   font-size: 0.86rem;
   font-weight: 600;
 }
@@ -644,10 +622,7 @@ main {
   line-height: 1.75;
 }
 
-
-/* =========================================================
-   Contact
-========================================================= */
+/* Contact */
 
 .contact-intro {
   max-width: 700px;
@@ -666,8 +641,6 @@ main {
 .contact-card {
   min-width: 0;
   padding: 2rem;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
   border-radius: 16px;
   transition:
     border-color var(--transition),
@@ -707,10 +680,7 @@ main {
   color: var(--accent);
 }
 
-
-/* =========================================================
-   Footer
-========================================================= */
+/* Footer */
 
 .footer {
   background-color: rgba(15, 23, 42, 0.7);
@@ -762,10 +732,7 @@ main {
   font-size: 1.1rem;
 }
 
-
-/* =========================================================
-   Animations
-========================================================= */
+/* Animations */
 
 @keyframes fade-in-left {
   from {
@@ -791,10 +758,7 @@ main {
   }
 }
 
-
-/* =========================================================
-   Tablet
-========================================================= */
+/* Tablet */
 
 @media (max-width: 900px) {
   .hero-content {
@@ -811,10 +775,7 @@ main {
   }
 }
 
-
-/* =========================================================
-   Mobile
-========================================================= */
+/* Mobile */
 
 @media (max-width: 768px) {
   :root {
@@ -886,10 +847,7 @@ main {
   }
 }
 
-
-/* =========================================================
-   Small mobile
-========================================================= */
+/* Small mobile */
 
 @media (max-width: 560px) {
   .container {
@@ -940,10 +898,7 @@ main {
   }
 }
 
-
-/* =========================================================
-   Accessibility
-========================================================= */
+/* Accessibility */
 
 a:focus-visible,
 button:focus-visible {
