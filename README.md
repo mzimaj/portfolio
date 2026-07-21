@@ -1,16 +1,79 @@
-# React + Vite
+# Marko Zimaj Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive frontend portfolio built with React and Vite. This project showcases my skills, projects, and experience as a frontend developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://mzimaj-portfolio.vercel.app
 
-## React Compiler
+## 🚀 Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design
+- Modern and clean user interface
+- Multi-page navigation
+- Project showcase
+- Contact page
+- Optimized for desktop and mobile devices
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── data/
+├── pages/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 💻 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/mzimaj/portfolio.git
+```
+
+Go to the project directory:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📫 Contact
+
+**Portfolio:**  
+https://mzimaj-portfolio.vercel.app
+
+**GitHub:**  
+https://github.com/mzimaj
+
+**Email:**  
+zimaj.marko@gmail.com
+
+---
+
+© 2026 Marko Zimaj
